@@ -32,7 +32,7 @@ public class UserController {
 		returnValue.setFirstName("Sergey");
 		returnValue.setLastName("Kargopolov");
 
-		return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+		return new ResponseEntity<>(returnValue, HttpStatus.OK);
 	}
 
 	@PostMapping
